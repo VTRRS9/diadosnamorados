@@ -116,32 +116,43 @@ body {
     }
 }
 
-/* --- Estilos para a Galeria Swiper --- */
+/* --- Estilos para a Galeria Swiper (MODIFICADO PARA TELAS MENORES) --- */
 
 .swiper {
-  width: 100%; /* Ocupa toda a largura do container */
+  width: 100%; 
   padding-top: 20px;
-  padding-bottom: 50px; /* Espaço para as sombras e rotação */
+  padding-bottom: 50px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 280px;  /* Largura de cada slide */
-  height: 380px; /* Altura de cada slide */
+  
+  /* --- AJUSTES PRINCIPAIS AQUI --- */
+  width: 75%;          /* Define a largura do slide central */
+  max-width: 280px;    /* Largura máxima para não ficar enorme em telas grandes */
+  height: 250px;         /* <<-- ALTURA REDUZIDA para caber melhor no celular */
+  
   border-radius: 15px;
-  overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
+  overflow: hidden; 
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem cobrir todo o espaço sem distorcer */
+  object-fit: cover; 
 }
 
 /* Estilizando as setas para combinar com o site */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ff4d6d; /* Mesma cor rosa/vermelho do título */
+  color: #ff4d6d;
+}
+
+/* Ajuste fino para telas muito pequenas (como um iPhone SE) */
+@media (max-width: 380px) {
+  .swiper-slide {
+    height: 220px; /* Deixa um pouco menor ainda em telas bem estreitas */
+  }
 }
