@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -17,24 +16,7 @@
     <main class="container">
         <h1 class="title">Vitor & Eduarda</h1>
 
-        <div class="swiper">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="foto1.jpeg" alt="Descrição da foto 1">
-        </div>
-        <div class="swiper-slide">
-            <img src="foto2.jpeg" alt="Descrição da foto 2">
-        </div>
-        <div class="swiper-slide">
-            <img src="foto3.jpeg" alt="Descrição da foto 3">
-        </div>
-        <div class="swiper-slide">
-            <img src="foto4.jpeg" alt="Descrição da foto 4">
-        </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
+        <img src="foto1.jpeg" alt="Foto do casal" class="main-photo">
 
         <div class="counter-container">
             <p>Eu amo você há</p>
@@ -53,36 +35,10 @@
         <p class="love-message">Eu te amo tanto, mas tanto que nunca vou conseguir descrever tamanho amor que sinto por você ❤️</p>
 
         <div class="spotify-player">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3MZasYL4eB4Tm2U2LZ58tj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/track/3MZasYL4eB4Tm2U2LZ58tj?si=mtlsV1z_SoKRuu1p89ReTA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </main>
 
     <script src="script.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-  const swiper = new Swiper('.swiper', {
-    effect: 'coverflow', // Ativa o efeito Coverflow
-    grabCursor: true,    // Mostra a mãozinha ao passar o mouse
-    centeredSlides: true,// O slide ativo fica no centro
-    slidesPerView: 'auto', // Mostra a quantidade de slides automaticamente
-    loop: true, // Faz a galeria girar em loop infinito
-
-    coverflowEffect: {
-      rotate: 50,       // Rotação do slide
-      stretch: 0,       // Distância do slide (esticar)
-      depth: 100,       // Profundidade (efeito 3D)
-      modifier: 1,      // Modificador do efeito
-      slideShadows: true, // Adiciona sombras
-    },
-
-    // Setas de navegação
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-</script>
 </body>
 </html>
