@@ -1,0 +1,116 @@
+/* Estilos gerais e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    z-index: 1; /* Para ficar na frente dos corações */
+}
+
+/* Título principal (ex: "Te amo") */
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: #ff4d6d; /* Cor rosa/vermelho */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Foto principal */
+.main-photo {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 15px;
+    border: 3px solid #ff4d6d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Contador de tempo */
+.counter-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.counter-container p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+#counter {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+/* Textos "Desde" e "Eu te amo" */
+.since-date, .love-message {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.love-message {
+    font-weight: bold;
+}
+
+/* Player do Spotify */
+.spotify-player {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Animação de corações no fundo */
+.hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px; /* Começa fora da tela */
+    font-size: 20px;
+    color: #ff4d6d;
+    animation: fly 10s linear infinite;
+    opacity: 0;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100vh); /* Sobe até o topo */
+        opacity: 0;
+    }
+}
